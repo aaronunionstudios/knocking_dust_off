@@ -8,11 +8,18 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  el: '#vue_det',
   // router,
   // components: { App },
   // template: '<App/>',
   data: {
-    message: 'this is my code'
+    firstname: 'ria',
+    lastname: 'Singh',
+    address: 'Mumbai'
+  },
+  methods: {
+    mydetails: function () {
+      return 'I am ' + this.firstname + ' ' + this.lastname
+    }
   }
 })
